@@ -1,4 +1,4 @@
-import modele.HotelDesVentes;
+import model.HotelDesVentes;
 
 public class Main {
 

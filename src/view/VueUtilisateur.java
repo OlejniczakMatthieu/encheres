@@ -1,4 +1,6 @@
-package vues;
+package view;
+
+import model.HotelDesVentes;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -10,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 
-public class VueHotelDesVentes implements ActionListener {
+public class VueUtilisateur implements ActionListener {
 
     private JFrame frame = new JFrame("Bidder");
     private JTextField textField = new JTextField();
@@ -20,7 +22,10 @@ public class VueHotelDesVentes implements ActionListener {
     private JLabel articleDepot = new JLabel("Depot: ");
     private JLabel lastBid = new JLabel("Last bid: ");
 
-    public VueHotelDesVentes() {
+    private HotelDesVentes hdv;
+
+    public VueUtilisateur(HotelDesVentes hdv) {
+        this.hdv = hdv;
         buildFrame();
     }
 
